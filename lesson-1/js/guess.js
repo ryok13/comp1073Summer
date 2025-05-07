@@ -4,7 +4,7 @@ let randomNumber = Math.floor(Math.random() * 100) + 1;
 // STEP 1b: Create variables to represent the three paragraphs above that will contain user feedback
 const guesses = document.querySelector('p#guesses');
 const lastResult = document.querySelector('p#lastResult');
-const lowOrHi = document.querySelector("lowOrHi");
+const lowOrHi = document.querySelector("p#lowOrHi");
 // STEP 1c: Create variables to represent the guessing form
 const guessField = document.querySelector('input#guessField');
 const guessSubmit = document.querySelector('button');
@@ -81,7 +81,8 @@ function resetGame() {
         resetParas[i].textContent = '';
     }
     // STEP 5c: Remove the reset button
-    resetButton.parentNode.removeChild(resetButton);
+    // resetButton.parentNode.removeChild(resetButton);
+    resetButton.remove();
     // STEP 5d: Re-enable the guessing form, clear out any old input, then put focus on the field
     guessField.disabled = false;
     guessSubmit.disabled = false;
