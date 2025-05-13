@@ -14,7 +14,7 @@ let guessCount = 1;
 let resetButton;
 
 // STEP 2: Put focus on the field that allows user to type in guesses
-guessField.focus();
+// guessField.focus();
 
 // STEP 3: Build a function to check the user's guess
 function checkGuess() {
@@ -54,7 +54,7 @@ function checkGuess() {
     // STEP 3g: Increment the guess count, move focus to the guess field for the next guess, and clear out the old input
     guessCount ++;
     guessField.value = '';
-    guessField.focus();
+    // guessField.focus();
     // STEP 3h: Proceed to the bottom of this file, just before we close out the SCRIPT element
 }
 
@@ -87,7 +87,7 @@ function resetGame() {
     guessField.disabled = false;
     guessSubmit.disabled = false;
     guessField.value = '';
-    guessField.focus();
+    // guessField.focus();
     // STEP 5e: Change background color of lastResult paragraph back to white
     lastResult.style.backgroundColor = 'white';
     // STEP 5f: Generate a new random number
