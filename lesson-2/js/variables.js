@@ -39,4 +39,8 @@
 		goodDog: true
 	}
 
+	let dog = { name: "Spot", breed: "Dalmatian" };
+	let dogs = dog.name;
+	console.log(dogs);
+
 	// STEP 5: Typing (JavaScript is a loosely-typed language)
