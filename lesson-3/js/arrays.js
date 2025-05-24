@@ -37,7 +37,7 @@ for(let i = 0; i<myArray.length; i++) {
             childItem.textContent = `${myArray[i][j]}`;
         }
     } else {
-            listItem.textContent += `${myArray[i]}\n`;
+            listItem.textContent += `${myArray[i]}`;
     }
 }
 /* STEP 4: Convert a string to an array
@@ -68,9 +68,9 @@ let orig6Length = orig6Array.push("Philadelphia Flyers");
 let removeElement = orig6Array.pop();
 // To do the same thing, that is, to add and remove an item from the beginning of the array, use shift() and unshift()
 console.log(orig6Array);
-orig6Array.shift();
+orig6Array.shift(); // Toronto Maple Leafs is removed
 console.log(orig6Array);
-orig6Array.unshift("Winnipeg Jets");
+orig6Array.unshift("Winnipeg Jets"); // Winnipeg Jets is the start of array 
 // We can also modify the array contents by deleting or substituting elements, or inserting one or more elements at a certain place with splice()
 let removed = orig6Array.splice(2, 2, "Edmonton Oilers");
 console.log(removed);
