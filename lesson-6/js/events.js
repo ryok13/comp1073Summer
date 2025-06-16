@@ -33,11 +33,37 @@ buttons[0].removeEventListener("click", bgChange);
 Let's rewrite the above code with these two methods - comment out the A, B, C buttons and restore the original button - then comment out the above code */
 
 /* STEP 4b: We can also put the entire bgChange() function inside an anonymous function, if we'd like: */
-buttons[0].addEventListener("click", function () {
-    // bgChange();
-    document.body.style.backgroundColor = "rgb(0, 0, 0)";
-})
+// buttons[0].addEventListener("blur", function () {
+//     // bgChange();
+//     document.body.style.backgroundColor = "rgb(0, 0, 0)";
+// })
+// buttons[0].addEventListener("dblclick", function () {
+//     // bgChange();
+//     document.body.style.backgroundColor = "rgb(0, 0, 0)";
+// })
+// buttons[0].addEventListener("mouseover", function () {
+//     // bgChange();
+//     document.body.style.backgroundColor = "rgb(0, 0, 0)";
+// })
+// buttons[0].addEventListener("mouseout", function () {
+//     // bgChange();
+//     document.body.style.backgroundColor = "rgb(0, 0, 0)";
+// })
+// const controller = new AbortController();
+// buttons[0].addEventListener("mouseout", function () {
+//     // bgChange();
+//     document.body.style.backgroundColor = "rgb(0, 0, 0)";
+// },
+// {signal: controller.signal}
+// );
+// controller.abort();
+function bgChange1(e) {
+    const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+    e.target.style.backgroundColor = rndCol;
+    console.log(e);
+}
 
+btn.addEventListener("click", bgChange1);
 
 /* STEP 4c: We can now remove the event listener … comment out the above code in STEP 4b, and then add another event listener, then remove it (silly, yes, but try it all the same) */
 

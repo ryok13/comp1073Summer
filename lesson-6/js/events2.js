@@ -39,3 +39,9 @@ form.addEventListener("submit", function (event) {
 // Next, open up gallery.html...
 
 // This page inspired by and adapted from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
+
+const button = document.querySelector('button');
+function myFunction(event) {
+   console.log(event.target);
+}
+button.addEventListener('click', myFunction);
