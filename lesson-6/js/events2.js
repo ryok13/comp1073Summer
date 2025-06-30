@@ -42,6 +42,6 @@ form.addEventListener("submit", function (event) {
 
 const button = document.querySelector('button');
 function myFunction(event) {
-   console.log(event.target);
+    console.log(event.target);
 }
 button.addEventListener('click', myFunction);

@@ -38,6 +38,7 @@
 		age: 6,
 		goodDog: true
 	}
+	// ex. myDog["name"] / myDog.name
 
 	let dog = { name: "Spot", breed: "Dalmatian" };
 	let dogs = dog.name;

@@ -37,8 +37,11 @@
         // Note - if you don't specify where to end the slice, the method returns the rest of the string
 
         /* STEP 4: Changing Case */
-        let step4 = step1a.toUpperCase();
-        console.log(step4);
+        // let step4 = step1a.toUpperCase();
+        // console.log(step4);
+        let step4 = step1a.charAt(3).toUpperCase();
+        let step4b = step1a.slice(4);
+        console.log(step4 + step4b);
 
         /* STEP 5: Updating Parts of a String */
         let step5 = step1a.replace("string", "car");
