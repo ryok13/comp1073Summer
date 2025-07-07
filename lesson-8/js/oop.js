@@ -1,10 +1,16 @@
 const output = document.getElementById('output');
 
 /* STEP 1a: Create a new object using a regular function */
-
+function createNewVehicle(make, model, color) {
+    let obj = {};
+    obj.make = make;
+    obj.model = model;
+    obj.color = color;
+    return obj;
+}
 
 /* STEP 1b: Use the console to create a new album object, and then invoke the function represented using .describe() */
-
+let vehicle = createNewVehicle("Honda","Civic","White");
 
 /* STEP 2a: In order to be a bit more concise, JavaScript allows us to use constructor functions - rewrite the above function, without returning anything. Capitalize the name of the function. */
 
@@ -13,11 +19,27 @@ const output = document.getElementById('output');
 
 
 /* STEP 3a: Build the complete constructor for the object Album (comment out the above functions first). Include album name, artist, year, number of tracks, and description (function). */
+function Vehicle(make,model,color) {
+    this.make = make;
+    this.model = model;
+    this.color = color;
+    this.desc = function() {
+        alert(`A ${this.model} ${this.make} car with ${this.color} color.`);
+    }
+}
 
-
+let car1 = new Vehicle("Honda","Civic","White");
+let car2 = new Vehicle("Honda","CRV","Black");
 
 /* STEP 3b: Instantiate a new Album (or 2) based on the above constructor */
-
+function album2(name,model,color) {
+    this.make = make;
+    this.model = model;
+    this.color = color;
+    this.desc = function() {
+        alert(`A ${this.model} ${this.make} car with ${this.color} color.`);
+    }
+}
 
 /* STEP 3c: Attempt to access the various properties of album2 or album3 using the console. */
 // album2['name']
