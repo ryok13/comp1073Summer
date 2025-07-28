@@ -37,13 +37,13 @@ if(!window.DeviceOrientationEvent) {
 // STEP 3c: Use the same value to update the position of the slider
         alphaSlider.value = Math.round(event.alpha);
 // STEP 3d: Capture the beta value (tilt toward/away) and set the textContent for the <output> element
-        alphaValue.textContent = Math.round(event.beta);
+        betaValue.textContent = Math.round(event.beta);
 // STEP 3e: Use the same value to update the position of the slider
-        alphaSlider.value = Math.round(event.beta);
+        betaSlider.value = Math.round(event.beta);
 // STEP 3f: Capture the gamma value (tilt left/right) and set the textContent for the <output> element
-        alphaValue.textContent = Math.round(event.gamma);
+        gammaValue.textContent = Math.round(event.gamma);
 // STEP 3g: Use the same value to update the position of the slider
-        alphaSlider.value = Math.round(event.gamma);
+        gammaSlider.value = Math.round(event.gamma);
     })
 }
 /* Learn more at https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent */
