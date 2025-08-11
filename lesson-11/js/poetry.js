@@ -18,7 +18,7 @@ function updateDisplay(choosenVerse) {
     console.log(url);
 
     // STEP 5: Build fetch() with promises
-    fetch(url)
+    // fetch(url)
     // STEP 5a: Use fetch and pass in the URL
     fetch(url)    
     // STEP 5b: The fetch() will return a promise - which when received from the server, the promise's then() event handler is called using the response
